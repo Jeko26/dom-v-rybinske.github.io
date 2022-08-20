@@ -13,7 +13,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
   </head>
@@ -100,7 +105,12 @@
                 <h3 class="examples__mini-tile main-small-heading">
                   Capital hill residence
                 </h3>
-                <img src="image/love.png" alt="" class="examples__ico" />
+                <img
+                  id="image"
+                  src="image/love.png"
+                  onClick="imgsrc();"
+                  class="examples__ico"
+                />
               </div>
               <div class="examples__line-second">
                 <img src="image/gde.png" alt="" class="examples__map-ico" />
@@ -134,7 +144,9 @@
             <img src="image/house2.png" alt="" class="examples__image" />
             <div class="examples__content-box">
               <div class="examples__line-first">
-                <h3 class="examples__mini-tile main-small-heading"></h3>
+                <h3 class="examples__mini-tile main-small-heading">
+                  Picket Fence Realty
+                </h3>
                 <img src="image/love.png" alt="" class="examples__ico" />
               </div>
               <div class="examples__line-second">
@@ -169,7 +181,9 @@
             <img src="image/house3.png" alt="" class="examples__image" />
             <div class="examples__content-box">
               <div class="examples__line-first">
-                <h3 class="examples__mini-tile main-small-heading"></h3>
+                <h3 class="examples__mini-tile main-small-heading">
+                  Banyon Tree Realty
+                </h3>
                 <img src="image/love.png" alt="" class="examples__ico" />
               </div>
               <div class="examples__line-second">
@@ -204,7 +218,9 @@
             <img src="image/house4.png" alt="" class="examples__image" />
             <div class="examples__content-box">
               <div class="examples__line-first">
-                <h3 class="examples__mini-tile main-small-heading"></h3>
+                <h3 class="examples__mini-tile main-small-heading">
+                  Corsair Real Estate
+                </h3>
                 <img src="image/love.png" alt="" class="examples__ico" />
               </div>
               <div class="examples__line-second">
@@ -239,7 +255,9 @@
             <img src="image/house5.png" alt="" class="examples__image" />
             <div class="examples__content-box">
               <div class="examples__line-first">
-                <h3 class="examples__mini-tile main-small-heading"></h3>
+                <h3 class="examples__mini-tile main-small-heading">
+                  Sequoia Real Estate
+                </h3>
                 <img src="image/love.png" alt="" class="examples__ico" />
               </div>
               <div class="examples__line-second">
@@ -274,7 +292,9 @@
             <img src="image/house6.png" alt="" class="examples__image" />
             <div class="examples__content-box">
               <div class="examples__line-first">
-                <h3 class="examples__mini-tile main-small-heading"></h3>
+                <h3 class="examples__mini-tile main-small-heading">
+                  Strive Partners Realty
+                </h3>
                 <img src="image/love.png" alt="" class="examples__ico" />
               </div>
               <div class="examples__line-second">
@@ -387,190 +407,205 @@
         </div>
       </div>
     </section>
-    <section class="swiper swiper__container">
-      <div class="swiper__text-box">
-        <h3
-          class="swiper__mini-title main-small-heading main-small-heading--orange"
-        >
-          Reviews
-        </h3>
-        <h2 class="swiper__title main-medium-heading">
-          Our valuable customer says
-        </h2>
-      </div>
-      <div class="swiper-wrapper">
-        <div class="swiper__slide">
-          <div class="swiper__group">
-            <div class="swiper__content-box">
-              <img src="image/man.png" alt="" class="swiper__image" />
-              <div class="swiper__text-group">
-                <h3 class="swiper__mini-title main-small-heading">
-                  Justin Lee
-                </h3>
-                <p class="swiper__descr simple-text">
-                  Products Designer at Ito
-                </p>
-              </div>
-            </div>
-            <img src="image/xzcho.png" alt="" class="swiper__ico" />
-          </div>
-          <p class="swiper__descr simple-text">
-            A good real estate agent doesn’t disappear once the closing IN
-            signed.Buying a bigger home doesn’t necessarily mean spendi more
-            money.Been there. Done that. Sold. Bought Bringing It All Together.
-          </p>
+    <section class="Swiper">
+      <div class="swiper swiper__container">
+        <div class="swiper__text-box">
+          <h3
+            class="swiper__mini-title main-small-heading main-small-heading--orange"
+          >
+            Reviews
+          </h3>
+          <h2 class="swiper__title main-medium-heading">
+            Our valuable customer says
+          </h2>
         </div>
-        <div class="swiper__slide">
-          <div class="swiper__group">
-            <div class="swiper__content-box">
-              <img src="image/woman.png" alt="" class="swiper__image" />
-              <div class="swiper__text-group">
-                <h3 class="swiper__mini-title main-small-heading">
-                  Angel Cathe
-                </h3>
-                <p class="swiper__descr simple-text">
-                  Products Designer at Ito
-                </p>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper__half">
+              <div class="swiper__group">
+                <div class="swiper__content-box">
+                  <img src="image/man.png" alt="" class="swiper__image" />
+                  <div class="swiper__text-group">
+                    <h3 class="swiper__mini-title main-small-heading">
+                      Justin Lee
+                    </h3>
+                    <p class="swiper__descr simple-text">
+                      Products Designer at Ito
+                    </p>
+                  </div>
+                </div>
+                <img src="image/xzcho.png" alt="" class="swiper__ico" />
               </div>
+              <p class="swiper__descr simple-text">
+                A good real estate agent doesn’t disappear once the closing IN
+                signed.Buying a bigger home doesn’t necessarily mean spendi more
+                money.Been there. Done that. Sold. Bought Bringing It All
+                Together.
+              </p>
             </div>
-            <img src="image/xzcho.png" alt="" class="swiper__ico" />
-          </div>
-          <p class="swiper__descr simple-text">
-            A good real estate agent doesn’t disappear once the closing IN
-            signed.Buying a bigger home doesn’t necessarily mean spendi more
-            money.Been there. Done that. Sold. Bought be Bringing It All
-            Together there.
-          </p>
-        </div>
-        <div class="swiper__slide">
-          <div class="swiper__group">
-            <div class="swiper__content-box">
-              <img src="image/man.png" alt="" class="swiper__image" />
-              <div class="swiper__text-group">
-                <h3 class="swiper__mini-title main-small-heading">
-                  Justin Lee
-                </h3>
-                <p class="swiper__descr simple-text">
-                  Products Designer at Ito
-                </p>
+            <div class="swiper__half">
+              <div class="swiper__group">
+                <div class="swiper__content-box">
+                  <img src="image/woman.png" alt="" class="swiper__image" />
+                  <div class="swiper__text-group">
+                    <h3 class="swiper__mini-title main-small-heading">
+                      Angel Cathe
+                    </h3>
+                    <p class="swiper__descr simple-text">
+                      Products Designer at Ito
+                    </p>
+                  </div>
+                </div>
+                <img src="image/xzcho.png" alt="" class="swiper__ico" />
               </div>
+              <p class="swiper__descr simple-text">
+                A good real estate agent doesn’t disappear once the closing IN
+                signed.Buying a bigger home doesn’t necessarily mean spendi more
+                money.Been there. Done that. Sold. Bought be Bringing It All
+                Together there.
+              </p>
             </div>
-            <img src="image/xzcho.png" alt="" class="swiper__ico" />
           </div>
-          <p class="swiper__descr simple-text">
-            A good real estate agent doesn’t disappear once the closing IN
-            signed.Buying a bigger home doesn’t necessarily mean spendi more
-            money.Been there. Done that. Sold. Bought Bringing It All Together.
-          </p>
-        </div>
-        <div class="swiper__slide">
-          <div class="swiper__group">
-            <div class="swiper__content-box">
-              <img src="image/woman.png" alt="" class="swiper__image" />
-              <div class="swiper__text-group">
-                <h3 class="swiper__mini-title main-small-heading">
-                  Angel Cathe
-                </h3>
-                <p class="swiper__descr simple-text">
-                  Products Designer at Ito
-                </p>
+          <div class="swiper-slide">
+            <div class="swiper__half">
+              <div class="swiper__group">
+                <div class="swiper__content-box">
+                  <img src="image/man.png" alt="" class="swiper__image" />
+                  <div class="swiper__text-group">
+                    <h3 class="swiper__mini-title main-small-heading">
+                      Justin Lee
+                    </h3>
+                    <p class="swiper__descr simple-text">
+                      Products Designer at Ito
+                    </p>
+                  </div>
+                </div>
+                <img src="image/xzcho.png" alt="" class="swiper__ico" />
               </div>
+              <p class="swiper__descr simple-text">
+                A good real estate agent doesn’t disappear once the closing IN
+                signed.Buying a bigger home doesn’t necessarily mean spendi more
+                money.Been there. Done that. Sold. Bought Bringing It All
+                Together.
+              </p>
             </div>
-            <img src="image/xzcho.png" alt="" class="swiper__ico" />
-          </div>
-          <p class="swiper__descr simple-text">
-            A good real estate agent doesn’t disappear once the closing IN
-            signed.Buying a bigger home doesn’t necessarily mean spendi more
-            money.Been there. Done that. Sold. Bought be Bringing It All
-            Together there.
-          </p>
-        </div>
-        <div class="swiper__slide">
-          <div class="swiper__group">
-            <div class="swiper__content-box">
-              <img src="image/man.png" alt="" class="swiper__image" />
-              <div class="swiper__text-group">
-                <h3 class="swiper__mini-title main-small-heading">
-                  Justin Lee
-                </h3>
-                <p class="swiper__descr simple-text">
-                  Products Designer at Ito
-                </p>
+            <div class="swiper__half">
+              <div class="swiper__group">
+                <div class="swiper__content-box">
+                  <img src="image/woman.png" alt="" class="swiper__image" />
+                  <div class="swiper__text-group">
+                    <h3 class="swiper__mini-title main-small-heading">
+                      Angel Cathe
+                    </h3>
+                    <p class="swiper__descr simple-text">
+                      Products Designer at Ito
+                    </p>
+                  </div>
+                </div>
+                <img src="image/xzcho.png" alt="" class="swiper__ico" />
               </div>
+              <p class="swiper__descr simple-text">
+                A good real estate agent doesn’t disappear once the closing IN
+                signed.Buying a bigger home doesn’t necessarily mean spendi more
+                money.Been there. Done that. Sold. Bought be Bringing It All
+                Together there.
+              </p>
             </div>
-            <img src="image/xzcho.png" alt="" class="swiper__ico" />
           </div>
-          <p class="swiper__descr simple-text">
-            A good real estate agent doesn’t disappear once the closing IN
-            signed.Buying a bigger home doesn’t necessarily mean spendi more
-            money.Been there. Done that. Sold. Bought Bringing It All Together.
-          </p>
-        </div>
-        <div class="swiper__slide">
-          <div class="swiper__group">
-            <div class="swiper__content-box">
-              <img src="image/woman.png" alt="" class="swiper__image" />
-              <div class="swiper__text-group">
-                <h3 class="swiper__mini-title main-small-heading">
-                  Angel Cathe
-                </h3>
-                <p class="swiper__descr simple-text">
-                  Products Designer at Ito
-                </p>
+          <div class="swiper-slide">
+            <div class="swiper__half">
+              <div class="swiper__group">
+                <div class="swiper__content-box">
+                  <img src="image/man.png" alt="" class="swiper__image" />
+                  <div class="swiper__text-group">
+                    <h3 class="swiper__mini-title main-small-heading">
+                      Justin Lee
+                    </h3>
+                    <p class="swiper__descr simple-text">
+                      Products Designer at Ito
+                    </p>
+                  </div>
+                </div>
+                <img src="image/xzcho.png" alt="" class="swiper__ico" />
               </div>
+              <p class="swiper__descr simple-text">
+                A good real estate agent doesn’t disappear once the closing IN
+                signed.Buying a bigger home doesn’t necessarily mean spendi more
+                money.Been there. Done that. Sold. Bought Bringing It All
+                Together.
+              </p>
             </div>
-            <img src="image/xzcho.png" alt="" class="swiper__ico" />
-          </div>
-          <p class="swiper__descr simple-text">
-            A good real estate agent doesn’t disappear once the closing IN
-            signed.Buying a bigger home doesn’t necessarily mean spendi more
-            money.Been there. Done that. Sold. Bought be Bringing It All
-            Together there.
-          </p>
-        </div>
-        <div class="swiper__slide">
-          <div class="swiper__group">
-            <div class="swiper__content-box">
-              <img src="image/man.png" alt="" class="swiper__image" />
-              <div class="swiper__text-group">
-                <h3 class="swiper__mini-title main-small-heading">
-                  Justin Lee
-                </h3>
-                <p class="swiper__descr simple-text">
-                  Products Designer at Ito
-                </p>
+            <div class="swiper__half">
+              <div class="swiper__group">
+                <div class="swiper__content-box">
+                  <img src="image/woman.png" alt="" class="swiper__image" />
+                  <div class="swiper__text-group">
+                    <h3 class="swiper__mini-title main-small-heading">
+                      Angel Cathe
+                    </h3>
+                    <p class="swiper__descr simple-text">
+                      Products Designer at Ito
+                    </p>
+                  </div>
+                </div>
+                <img src="image/xzcho.png" alt="" class="swiper__ico" />
               </div>
+              <p class="swiper__descr simple-text">
+                A good real estate agent doesn’t disappear once the closing IN
+                signed.Buying a bigger home doesn’t necessarily mean spendi more
+                money.Been there. Done that. Sold. Bought be Bringing It All
+                Together there.
+              </p>
             </div>
-            <img src="image/xzcho.png" alt="" class="swiper__ico" />
           </div>
-          <p class="swiper__descr simple-text">
-            A good real estate agent doesn’t disappear once the closing IN
-            signed.Buying a bigger home doesn’t necessarily mean spendi more
-            money.Been there. Done that. Sold. Bought Bringing It All Together.
-          </p>
-        </div>
-        <div class="swiper__slide">
-          <div class="swiper__group">
-            <div class="swiper__content-box">
-              <img src="image/woman.png" alt="" class="swiper__image" />
-              <div class="swiper__text-group">
-                <h3 class="swiper__mini-title main-small-heading">
-                  Angel Cathe
-                </h3>
-                <p class="swiper__descr simple-text">
-                  Products Designer at Ito
-                </p>
+          <div class="swiper-slide">
+            <div class="swiper__half">
+              <div class="swiper__group">
+                <div class="swiper__content-box">
+                  <img src="image/man.png" alt="" class="swiper__image" />
+                  <div class="swiper__text-group">
+                    <h3 class="swiper__mini-title main-small-heading">
+                      Justin Lee
+                    </h3>
+                    <p class="swiper__descr simple-text">
+                      Products Designer at Ito
+                    </p>
+                  </div>
+                </div>
+                <img src="image/xzcho.png" alt="" class="swiper__ico" />
               </div>
+              <p class="swiper__descr simple-text">
+                A good real estate agent doesn’t disappear once the closing IN
+                signed.Buying a bigger home doesn’t necessarily mean spendi more
+                money.Been there. Done that. Sold. Bought Bringing It All
+                Together.
+              </p>
             </div>
-            <img src="image/xzcho.png" alt="" class="swiper__ico" />
+            <div class="swiper__half">
+              <div class="swiper__group">
+                <div class="swiper__content-box">
+                  <img src="image/woman.png" alt="" class="swiper__image" />
+                  <div class="swiper__text-group">
+                    <h3 class="swiper__mini-title main-small-heading">
+                      Angel Cathe
+                    </h3>
+                    <p class="swiper__descr simple-text">
+                      Products Designer at Ito
+                    </p>
+                  </div>
+                </div>
+                <img src="image/xzcho.png" alt="" class="swiper__ico" />
+              </div>
+              <p class="swiper__descr simple-text">
+                A good real estate agent doesn’t disappear once the closing IN
+                signed.Buying a bigger home doesn’t necessarily mean spendi more
+                money.Been there. Done that. Sold. Bought be Bringing It All
+                Together there.
+              </p>
+            </div>
           </div>
-          <p class="swiper__descr simple-text">
-            A good real estate agent doesn’t disappear once the closing IN
-            signed.Buying a bigger home doesn’t necessarily mean spendi more
-            money.Been there. Done that. Sold. Bought be Bringing It All
-            Together there.
-          </p>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
     <section class="feedback">
@@ -613,28 +648,30 @@
         </div>
         <div class="footer__links">
           <ul class="footer__item">
-            <li class="footer__link">About</li>
-            <li class="footer__link">Company</li>
-            <li class="footer__link">Team</li>
-            <li class="footer__link">Career</li>
-            <li class="footer__link">Blogs</li>
+            <li class="footer__link simple-text">About</li>
+            <li class="footer__link simple-text">Company</li>
+            <li class="footer__link simple-text">Team</li>
+            <li class="footer__link simple-text">Career</li>
+            <li class="footer__link simple-text">Blogs</li>
           </ul>
           <ul class="footer__item">
-            <li class="footer__link">Products</li>
-            <li class="footer__link">E-Books</li>
-            <li class="footer__link">Preasantation</li>
-            <li class="footer__link">Management</li>
-            <li class="footer__link">Dashboard</li>
+            <li class="footer__link simple-text">Products</li>
+            <li class="footer__link simple-text">E-Books</li>
+            <li class="footer__link simple-text">Preasantation</li>
+            <li class="footer__link simple-text">Management</li>
+            <li class="footer__link simple-text">Dashboard</li>
           </ul>
           <ul class="footer__item">
-            <li class="footer__link">Address</li>
-            <li class="footer__link">Country Delevery</li>
-            <li class="footer__link">Counter Beach Post</li>
-            <li class="footer__link">www.itobd.com</li>
-            <li class="footer__link">+880176565655</li>
+            <li class="footer__link simple-text">Address</li>
+            <li class="footer__link simple-text">Country Delevery</li>
+            <li class="footer__link simple-text">Counter Beach Post</li>
+            <li class="footer__link simple-text">www.itobd.com</li>
+            <li class="footer__link simple-text">+880176565655</li>
           </ul>
         </div>
       </div>
     </footer>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </html>
