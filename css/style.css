@@ -444,6 +444,10 @@ input {
     margin: 0 10px;
 }
 
+.footer {
+    padding-bottom: 20px;
+}
+
 .footer__logo, .footer__descr {
     margin-bottom: 25px;
 }
@@ -455,7 +459,7 @@ input {
 .footer__image-box {
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 70%;
 }
 
 .footer__links {
@@ -474,4 +478,37 @@ input {
 
 .footer__link:not(:last-child) {
     margin-bottom: 15px;
+}
+
+/* hover */
+
+.btn:hover {
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    cursor: pointer;
+    background-color: blue;
+}
+
+.header__link:hover, .main__descr:hover {
+    cursor: pointer;
+}
+
+.partners__logo {
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+
+.partners__logo:hover {
+    cursor: pointer;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.footer__image, .header__logo, .footer__logo {
+    cursor: pointer;
+}
+
+.footer__link:not(:first-child):hover {
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    text-decoration: underline;
+    cursor: pointer;
 }
