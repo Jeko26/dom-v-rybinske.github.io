@@ -12,6 +12,10 @@ section {
     background: #E5E5E5;
 }
 
+.header__burger {
+    display: none;
+}
+
 .container {
     padding: 0 10%;
     display: flex;
